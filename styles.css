@@ -107,6 +107,10 @@ main section {
 	flex: 50%;
 }
 
+.sec-img img {
+	width: 250px;
+}
+
 /* .sec-img img {
 	justify-content: flex-end;
 } */
@@ -206,8 +210,137 @@ footer div {
  	}
  }
 
-@media screen and (max-height: 600px) {
+@media screen and (max-width: 500px) {
+
+	body {
+		font-size: 12px;
+		text-align: center;
+	}
+
+	p {
+ 		font-weight: 50;
+ 	}
+
+ 	h1, h2 {
+ 		font-weight: 500;
+ 	}
+
+ 	.top button, .intro-head button {
+ 		padding: 8px;
+ 		font-size: 10px;
+ 	}
+
 	header {
+		padding: 15px;
+	}
+
+	.main-head {
+		flex-direction: column;
+		text-align: center;
+	}
+	.intro-head, .intro-image {
+		flex: 90%;
+	}
+
+	main {
+		margin: 1rem;
+	}
+
+	main section {
+		display: block;
+	}
+
+	.main-foot {
+		width: 90%;
+	}
+
+	.main-foot button {
+		padding: 10px;
+		font-weight: 50;
+	}
+
+	footer {
+		flex-direction: column;
+		padding: 1rem 2rem;
+		font-size: 10px;
+		text-align: left;
+	}
+
+	footer div {
+		margin: 10px 0;
+	}
+
+	.icon p, .link p {
+	padding: 5px 0;
+}
+}
+
+@media screen and (max-width: 375px) {
+
+	body {
+		font-size: 10px;
+		text-align: center;
+	}
+
+	p {
+ 		font-weight: 50;
+ 	}
+
+ 	h1, h2 {
+ 		font-weight: 300;
+ 	}
+
+ 	.top button, .intro-head button {
+ 		padding: 5px;
+ 		font-size: 9px;
+ 	}
+
+	header {
+		padding: 10px;
+	}
+
+	.main-head {
+		flex-direction: column;
+		text-align: center;
+	}
+	.intro-head, .intro-image {
+		flex: 90%;
+	}
+
+	main {
+		margin: 1rem;
+	}
+
+	main section {
+		display: block;
 		padding: 1rem;
 	}
+
+	.sec-img img {
+	width: 150px;
+	}
+
+	.main-foot {
+		width: 90%;
+	}
+
+	.main-foot button {
+		padding: 5px;
+		font-size: 8px;
+	}
+
+	footer {
+		flex-direction: column;
+		padding: 1rem 2rem;
+		font-size: 10px;
+		text-align: left;
+	}
+
+	footer div {
+		margin: 10px 0;
+	}
+
+	.icon p, .link p {
+	padding: 5px 0;
+}
 }
