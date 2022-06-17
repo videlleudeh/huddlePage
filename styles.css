@@ -1,0 +1,213 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+/* Header */
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	height: auto;
+	/* font-family: 'Poppins', sans-serif; */
+}
+
+header {
+	background-image: url("images/bg-hero-desktop.svg");
+	background-color: hsl(193, 100%, 96%);
+	height: auto;
+	padding: 2rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.top {
+	padding-bottom: 30px;
+}
+
+.top img {
+	margin: 0 2rem;
+	padding: 20px;
+	width: 25%;
+}
+
+.top button {
+	padding: 13px;
+	background-color: white;
+	float: right;
+	border: none;
+	border-radius: 20px;
+	width: 13%;
+}
+
+.main-head {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.intro-head {
+	flex: 40%;
+	margin: 0 2rem;
+
+}
+
+.intro-head h1, .intro-head p {
+	padding: 20px;
+}
+
+.intro-head h1 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+}
+
+.intro-head button {
+	padding: 15px;
+	margin-left: 20px;
+	background-color: hsl(322, 100%, 66%);
+	border: none;
+	border-radius: 23px;
+	width: 45%;
+	color: white;
+	font-weight: 400;
+}
+
+.intro-image {
+	flex: 60%;
+	padding: 20px;
+}
+
+/* Main */
+
+main {
+	height: auto;
+	padding: 2rem; 
+	margin: 2rem;
+	display: flex;
+	flex-direction: column;
+}
+
+main section {
+	display: inline-flex;
+	padding: 3rem;
+	border-style: outset;
+	align-items: center;
+	justify-content: center;
+	margin: 10px 0;
+	border-radius: 10px;
+}
+
+.sec-div {
+	flex: 50%;
+}
+
+.sec-img {
+	flex: 50%;
+}
+
+/* .sec-img img {
+	justify-content: flex-end;
+} */
+
+.sec-div h2, .sec-div p{
+	padding: 20px 0;
+}
+
+.sec-div h2 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 700;
+}
+
+.sec-div p {
+	font-weight: 50;
+}
+
+.main-foot {
+	width: 40%;
+	padding: 2rem;
+	border-style: outset;
+	text-align: center;
+	margin: auto;
+	border-radius: 10px;
+	height: auto;
+	display: inline-block;
+	/* position: fixed; */
+	/* position: absolute; */
+}
+.main-foot h2, .main-foot button {
+	padding: 15px 0;
+}
+
+.main-foot h2 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
+}
+
+.main-foot button {
+	padding: 15px;
+	background-color: hsl(322, 100%, 66%);
+	border: none;
+	border-radius: 23px;
+	width: 50%;
+	color: white;
+}
+
+button:hover {
+	cursor: pointer;
+}
+/* Footer */
+
+
+footer {
+	display: flex;
+	height: auto;
+	background-color: hsl(192, 100%, 9%);
+	padding: 2rem 4rem;
+	color: white;
+	font-weight: 300;
+}
+
+footer div {
+	width: 33.3%;
+}
+
+.icon p, .link p {
+	padding: 10px 0;
+}
+
+#logo {
+	-webkit-filter: brightness(0) invert(1);
+	width: 40%;
+}
+
+/* Media Query */
+
+ @media screen and ( max-width: 890px) {
+ 	header {
+ 		padding: 1.5rem;
+ 	}
+
+	.intro-head h1, .intro-head p {
+		padding: 15px;
+	}
+
+	.top {
+		padding-bottom: 10px;
+	}
+
+ 	p {
+ 		font-weight: 50;
+ 	}
+
+ 	h1, h2 {
+ 		font-weight: 700;
+ 	}
+ }
+
+@media screen and (max-height: 600px) {
+	header {
+		padding: 1rem;
+	}
+}
