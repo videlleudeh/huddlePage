@@ -260,7 +260,6 @@ footer div {
 	footer {
 		flex-direction: column;
 		padding: 2rem;
-		font-size: 10px;
 		text-align: left;
 		padding-top: 6rem;
 	}
@@ -304,11 +303,9 @@ footer div {
 	.intro-head, .intro-image {
 		flex: 90%;
 	}
-
 	main {
 		margin: 1rem;
 	}
-
 	main section {
 		display: block;
 		padding: 1rem;
