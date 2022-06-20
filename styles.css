@@ -20,6 +20,7 @@ header {
 	padding: 2rem;
 	display: flex;
 	flex-direction: column;
+	font-size: 1.3rem;
 }
 
 .top {
@@ -28,7 +29,6 @@ header {
 
 .top img {
 	margin: 0 2rem;
-	padding: 20px;
 	width: 25%;
 }
 
@@ -55,7 +55,7 @@ header {
 }
 
 .intro-head h1, .intro-head p {
-	padding: 20px;
+	padding: 20px 0;
 }
 
 .intro-head h1 {
@@ -65,7 +65,6 @@ header {
 
 .intro-head button {
 	padding: 15px;
-	margin-left: 20px;
 	background-color: hsl(322, 100%, 66%);
 	border: none;
 	border-radius: 23px;
@@ -84,9 +83,10 @@ header {
 main {
 	height: auto;
 	padding: 2rem; 
-	margin: 2rem;
+	margin: 1.5rem;
 	display: flex;
 	flex-direction: column;
+	font-size: 1.3rem;
 }
 
 main section {
@@ -129,16 +129,19 @@ main section {
 }
 
 .main-foot {
-	width: 40%;
+	flex-direction: column;
+	width: 55%;
 	padding: 2rem;
 	border-style: outset;
 	text-align: center;
 	margin: auto;
 	border-radius: 10px;
 	height: auto;
-	display: inline-block;
+	background-color: white;
 	/* position: fixed; */
 	/* position: absolute; */
+	position: relative;
+	top: 150px;
 }
 .main-foot h2, .main-foot button {
 	padding: 15px 0;
@@ -158,6 +161,7 @@ main section {
 	color: white;
 }
 
+
 button:hover {
 	cursor: pointer;
 }
@@ -168,9 +172,11 @@ footer {
 	display: flex;
 	height: auto;
 	background-color: hsl(192, 100%, 9%);
-	padding: 2rem 4rem;
 	color: white;
-	font-weight: 300;
+	font-weight: 200;
+	padding: 0 2rem;
+	padding-top: 6rem;
+	font-size: 1.3rem;
 }
 
 footer div {
@@ -183,57 +189,61 @@ footer div {
 
 #logo {
 	-webkit-filter: brightness(0) invert(1);
+	filter: brightness(0) invert(1); 
 	width: 40%;
 }
 
 /* Media Query */
 
- @media screen and ( max-width: 890px) {
+ @media screen and ( max-width: 980px) {
+
  	header {
- 		padding: 1.5rem;
+ 		padding: 1.5rem 1rem;
  	}
-
-	.intro-head h1, .intro-head p {
-		padding: 15px;
+	header, main, footer {
+		font-size: 1rem;
 	}
-
 	.top {
 		padding-bottom: 10px;
 	}
-
  	p {
  		font-weight: 50;
  	}
-
- 	h1, h2 {
- 		font-weight: 700;
- 	}
- }
-
-@media screen and (max-width: 500px) {
-
-	body {
-		font-size: 12px;
-		text-align: center;
-	}
-
-	p {
- 		font-weight: 50;
- 	}
-
  	h1, h2 {
  		font-weight: 500;
  	}
+	.intro-head button {
+		padding: 8px;
+		width: 50%;
+		font-weight: 200;
+	}
+	.main-foot {
+		width: 55%;
+		padding: 2rem 1rem;
+	}
+}
 
- 	.top button, .intro-head button {
+@media screen and (max-width: 768px) {
+
+	body {
+		text-align: center;
+	}
+	.top {
+		text-align: justify;
+	}
+	p {
+ 		font-weight: 50;
+ 	}
+ 	h1, h2 {
+ 		font-weight: 500;
+ 	}
+ 	.top button, .intro-head button, .main-foot button {
  		padding: 8px;
  		font-size: 10px;
  	}
-
 	header {
 		padding: 15px;
 	}
-
 	.main-head {
 		flex-direction: column;
 		text-align: center;
@@ -241,64 +251,52 @@ footer div {
 	.intro-head, .intro-image {
 		flex: 90%;
 	}
-
 	main {
 		margin: 1rem;
 	}
-
 	main section {
 		display: block;
 	}
-
-	.main-foot {
-		width: 90%;
-	}
-
-	.main-foot button {
-		padding: 10px;
-		font-weight: 50;
-	}
-
 	footer {
 		flex-direction: column;
-		padding: 1rem 2rem;
+		padding: 2rem;
 		font-size: 10px;
 		text-align: left;
+		padding-top: 6rem;
 	}
-
 	footer div {
 		margin: 10px 0;
 	}
-
 	.icon p, .link p {
 	padding: 5px 0;
-}
+	}
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 500px) {
 
 	body {
 		font-size: 10px;
 		text-align: center;
 	}
-
 	p {
  		font-weight: 50;
  	}
-
+	 header, main, footer {
+		font-size: 0.8rem;
+	}
  	h1, h2 {
  		font-weight: 300;
  	}
-
- 	.top button, .intro-head button {
+ 	.intro-head button {
  		padding: 5px;
  		font-size: 9px;
  	}
-
+	 .top button {
+		width: inherit;
+	 }
 	header {
 		padding: 10px;
 	}
-
 	.main-head {
 		flex-direction: column;
 		text-align: center;
@@ -331,15 +329,14 @@ footer div {
 
 	footer {
 		flex-direction: column;
-		padding: 1rem 2rem;
+		padding: 2rem;
 		font-size: 10px;
 		text-align: left;
+		padding-top: 6rem;
 	}
-
 	footer div {
 		margin: 10px 0;
 	}
-
 	.icon p, .link p {
 	padding: 5px 0;
 }
