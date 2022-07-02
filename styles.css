@@ -99,12 +99,9 @@ main section {
 	border-radius: 10px;
 }
 
-.sec-div {
+.sec-div, .sec-img  {
 	flex: 50%;
-}
-
-.sec-img {
-	flex: 50%;
+	gap: 10px;
 }
 
 .sec-img img {
@@ -161,9 +158,12 @@ main section {
 	color: white;
 }
 
-
 button:hover {
 	cursor: pointer;
+}
+
+.intro-head button:hover, .main-foot button:hover {
+	background-color: hsl(324, 100%, 86%);
 }
 /* Footer */
 
@@ -183,7 +183,7 @@ footer div {
 	width: 33.3%;
 }
 
-.icon p, .link p {
+.icon p, .link p, .icon img{
 	padding: 10px 0;
 }
 
