@@ -156,6 +156,7 @@ main section {
 	border-radius: 23px;
 	width: 50%;
 	color: white;
+	transition: 0.3s;
 }
 
 button:hover {
@@ -165,8 +166,9 @@ button:hover {
 .intro-head button:hover, .main-foot button:hover {
 	background-color: hsl(324, 100%, 86%);
 }
-/* Footer */
 
+
+/* Footer */
 
 footer {
 	display: flex;
@@ -175,7 +177,7 @@ footer {
 	color: white;
 	font-weight: 200;
 	padding: 0 2rem;
-	padding-top: 6rem;
+	padding-top: 6.5rem;
 	font-size: 1.3rem;
 }
 
@@ -183,9 +185,28 @@ footer div {
 	width: 33.3%;
 }
 
-.icon p, .link p, .icon img{
+.icon p, .icon img{
 	padding: 10px 0;
 }
+
+.link td {
+	padding-top: 8rem;
+	padding: 15px;
+	font-size: 1.3rem;
+	color: white;
+}
+
+.socials {
+	display: flex;
+	flex-direction: column;
+	
+}
+
+.socials p {
+	align-self: flex-end;
+	padding-top: 100px;
+}
+
 
 #logo {
 	-webkit-filter: brightness(0) invert(1);
